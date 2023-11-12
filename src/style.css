@@ -1,0 +1,54 @@
+	@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+	*{
+		margin:0;
+		padding:0;
+		font-family: 'Satisfy', cursive;
+	}
+body{
+		background:#006266
+	}
+
+.diya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.diya-base {
+  width: 200px;
+  height: 100px;
+  border: 3px solid red;
+  background:#ff3838;
+  border-radius: 0 0 150px 150px;
+}
+
+.diya-jyoti {
+  background:#f1c40f;
+  width: 50px;
+  height: 110px;
+  border-radius: 100%;
+  position: relative;
+  bottom: 100px;
+  right: 210px;
+  box-shadow:0px 0px 30px #f1c40f, 0px 0px 50px #f1c40f;
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+ @keyframes pulse {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+.inner-circle {
+  width: 197px;
+  height: 80px;
+  position: relative;
+  bottom: 50px;
+  right: 3px;
+  background-color:#f1c40f;;
+  border: 5px solid black;
+  border-radius: 50%;
+}
